@@ -5,22 +5,30 @@
 - [DeleteGraphRequest](#animeshon.graph.v1alpha1.DeleteGraphRequest)
 - [MigrateGraphRequest](#animeshon.graph.v1alpha1.MigrateGraphRequest)
 
-## Graph {#animeshon.graph.v1alpha1.Graph}
+## <span id="animeshon.graph.v1alpha1.Graph">Graph</span>
 
-| MigrateGraph |
+
+
+| <span id="animeshon.graph.v1alpha1.Graph.MigrateGraph">MigrateGraph</span> |
 | --- |
-| **rpc** MigrateGraph([MigrateGraphRequest](#animeshon.graph.v1alpha1.MigrateGraphRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc MigrateGraph([MigrateGraphRequest](#animeshon.graph.v1alpha1.MigrateGraphRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-| DeleteGraph |
+| <span id="animeshon.graph.v1alpha1.Graph.DeleteGraph">DeleteGraph</span> |
 | --- |
-| **rpc** DeleteGraph([DeleteGraphRequest](#animeshon.graph.v1alpha1.DeleteGraphRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeleteGraph([DeleteGraphRequest](#animeshon.graph.v1alpha1.DeleteGraphRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-## DeleteGraphRequest {#animeshon.graph.v1alpha1.DeleteGraphRequest}
+
+## <span id="animeshon.graph.v1alpha1.DeleteGraphRequest">DeleteGraphRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the resource to delete. |
-## MigrateGraphRequest {#animeshon.graph.v1alpha1.MigrateGraphRequest}
+
+## <span id="animeshon.graph.v1alpha1.MigrateGraphRequest">MigrateGraphRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |

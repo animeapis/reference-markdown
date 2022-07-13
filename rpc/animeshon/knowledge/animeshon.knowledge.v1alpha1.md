@@ -38,51 +38,62 @@
 - [VoiceActing](#animeshon.knowledge.v1alpha1.VoiceActing)
 - [Website](#animeshon.knowledge.v1alpha1.Website)
 
-## Knowledge {#animeshon.knowledge.v1alpha1.Knowledge}
+## <span id="animeshon.knowledge.v1alpha1.Knowledge">Knowledge</span>
 
-| GetContribution |
+
+
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.GetContribution">GetContribution</span> |
 | --- |
-| **rpc** GetContribution([GetContributionRequest](#animeshon.knowledge.v1alpha1.GetContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)<br/> |
+| **rpc GetContribution([GetContributionRequest](#animeshon.knowledge.v1alpha1.GetContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)**<br/><br/> |
 
-| ListContributions |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.ListContributions">ListContributions</span> |
 | --- |
-| **rpc** ListContributions([ListContributionsRequest](#animeshon.knowledge.v1alpha1.ListContributionsRequest)) [ListContributionsResponse](#animeshon.knowledge.v1alpha1.ListContributionsResponse)<br/> |
+| **rpc ListContributions([ListContributionsRequest](#animeshon.knowledge.v1alpha1.ListContributionsRequest)) [ListContributionsResponse](#animeshon.knowledge.v1alpha1.ListContributionsResponse)**<br/><br/> |
 
-| CreateContribution |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.CreateContribution">CreateContribution</span> |
 | --- |
-| **rpc** CreateContribution([CreateContributionRequest](#animeshon.knowledge.v1alpha1.CreateContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)<br/> |
+| **rpc CreateContribution([CreateContributionRequest](#animeshon.knowledge.v1alpha1.CreateContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)**<br/><br/> |
 
-| GetContributionChanges |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.GetContributionChanges">GetContributionChanges</span> |
 | --- |
-| **rpc** GetContributionChanges([GetContributionChangesRequest](#animeshon.knowledge.v1alpha1.GetContributionChangesRequest)) [ContributionChanges](#animeshon.knowledge.v1alpha1.ContributionChanges)<br/> |
+| **rpc GetContributionChanges([GetContributionChangesRequest](#animeshon.knowledge.v1alpha1.GetContributionChangesRequest)) [ContributionChanges](#animeshon.knowledge.v1alpha1.ContributionChanges)**<br/><br/> |
 
-| ReviewContribution |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.ReviewContribution">ReviewContribution</span> |
 | --- |
-| **rpc** ReviewContribution([ReviewContributionRequest](#animeshon.knowledge.v1alpha1.ReviewContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)<br/>ReviewContribution allows moderators or the owner to modify and correct the contribution while in the PENDING or DRAFT state |
+| **rpc ReviewContribution([ReviewContributionRequest](#animeshon.knowledge.v1alpha1.ReviewContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)**<br/><br/>ReviewContribution allows moderators or the owner to modify and correct the contribution while in the PENDING or DRAFT state |
 
-| ApproveContribution |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.ApproveContribution">ApproveContribution</span> |
 | --- |
-| **rpc** ApproveContribution([ApproveContributionRequest](#animeshon.knowledge.v1alpha1.ApproveContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)<br/>ApproveContribution approves the contribution and applies the changes |
+| **rpc ApproveContribution([ApproveContributionRequest](#animeshon.knowledge.v1alpha1.ApproveContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)**<br/><br/>ApproveContribution approves the contribution and applies the changes |
 
-| RejectContribution |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.RejectContribution">RejectContribution</span> |
 | --- |
-| **rpc** RejectContribution([RejectContributionRequest](#animeshon.knowledge.v1alpha1.RejectContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)<br/>RejectContribution rejects the contribution and DESTROYS all the changes |
+| **rpc RejectContribution([RejectContributionRequest](#animeshon.knowledge.v1alpha1.RejectContributionRequest)) [Contribution](#animeshon.knowledge.v1alpha1.Contribution)**<br/><br/>RejectContribution rejects the contribution and DESTROYS all the changes |
 
-| AllocateResourceName |
+| <span id="animeshon.knowledge.v1alpha1.Knowledge.AllocateResourceName">AllocateResourceName</span> |
 | --- |
-| **rpc** AllocateResourceName([AllocateResourceNameRequest](#animeshon.knowledge.v1alpha1.AllocateResourceNameRequest)) [AllocateResourceNameResponse](#animeshon.knowledge.v1alpha1.AllocateResourceNameResponse)<br/>AllocateResourceName reserves a new resource name for entities which are not already part of Animeshon's Encyclopedia |
+| **rpc AllocateResourceName([AllocateResourceNameRequest](#animeshon.knowledge.v1alpha1.AllocateResourceNameRequest)) [AllocateResourceNameResponse](#animeshon.knowledge.v1alpha1.AllocateResourceNameResponse)**<br/><br/>AllocateResourceName reserves a new resource name for entities which are not already part of Animeshon's Encyclopedia |
 
-## AllocateResourceNameRequest {#animeshon.knowledge.v1alpha1.AllocateResourceNameRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.AllocateResourceNameRequest">AllocateResourceNameRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | kind | **[ string](#string)**<br/>The resource kind of the resource to migrate. |
-## AllocateResourceNameResponse {#animeshon.knowledge.v1alpha1.AllocateResourceNameResponse}
+
+## <span id="animeshon.knowledge.v1alpha1.AllocateResourceNameResponse">AllocateResourceNameResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the resource to migrate. |
-## Anime {#animeshon.knowledge.v1alpha1.Anime}
+
+## <span id="animeshon.knowledge.v1alpha1.Anime">Anime</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -166,12 +177,18 @@ Safe in USA MTR_RTN_USA_G |
 No Region Restriction NONE
 
 The Entity is illegal following the U.N. guidelines ILLEGAL |
-## ApproveContributionRequest {#animeshon.knowledge.v1alpha1.ApproveContributionRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.ApproveContributionRequest">ApproveContributionRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>Required resource name |
-## Canonical {#animeshon.knowledge.v1alpha1.Canonical}
+
+## <span id="animeshon.knowledge.v1alpha1.Canonical">Canonical</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -185,16 +202,22 @@ The Entity is illegal following the U.N. guidelines ILLEGAL |
 | websites | **[repeated Website](#Website)**<br/>List of websiste related to the entity. Websites might be official websites, Social, Wiki Entries |
 | marketplaces | **[repeated Marketplace](#Marketplace)**<br/>List of marketplaces related to the entry. Maketplaces tells where to buy / consume / read the entity |
 | contents | **[repeated Edge](#Edge)**<br/>List of contents part of the canonical Canonicals can include Anime, GraphicNovels, LightNovels and VisualNovels |
-## Cast {#animeshon.knowledge.v1alpha1.Cast}
+
+## <span id="animeshon.knowledge.v1alpha1.Cast">Cast</span>
+
 Cast represnt the relation between a character and a content.
 The cast is always field of the content and the Edge points to the character.
+
 | Field | Description |
 | --- | --- |
 | character | **[ Edge](#Edge)**<br/>Casted Chracter |
 | relation | **[ string](#string)**<br/>Relation within the content Valid relations:
 
 MAIN SUPPORT APPEARS |
-## Chapter {#animeshon.knowledge.v1alpha1.Chapter}
+
+## <span id="animeshon.knowledge.v1alpha1.Chapter">Chapter</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -218,7 +241,10 @@ Extra chapter EXTRA |
 | websites | **[repeated Website](#Website)**<br/>List of websiste related to the entity. Websites might be official websites, Social, Wiki Entries |
 | marketplaces | **[repeated Marketplace](#Marketplace)**<br/>List of marketplaces related to the entry. Maketplaces tells where to buy / consume / read the entity |
 | staff | **[repeated Collaboration](#Collaboration)**<br/>List of people/organizations which contributed to the production/distribution of the content |
-## Character {#animeshon.knowledge.v1alpha1.Character}
+
+## <span id="animeshon.knowledge.v1alpha1.Character">Character</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -279,18 +305,23 @@ O- O_MINUS |
 | marketplaces | **[repeated Marketplace](#Marketplace)**<br/>List of marketplaces related to the entry. Maketplaces tells where to buy / consume / read the entity
 
 repeated Edge guise_of = 13; |
-## Collaboration {#animeshon.knowledge.v1alpha1.Collaboration}
+
+## <span id="animeshon.knowledge.v1alpha1.Collaboration">Collaboration</span>
+
 Collaboration represent the relation between a content and a person or organization.
 The collaboration must be localizaed and it must carry the information about the role of the collaborator.
 The Collaboration is always field of the content and the Edge points to the collaborator.
 The localization must be a valid ISO3 localization which identifies the language/full localization of the content's version 
 for which the collaborator collaborated
+
 | Field | Description |
 | --- | --- |
 | collaborator | **[ Edge](#Edge)**<br/>Person / organization taking part to the collaboration |
 | localization | **[ string](#string)**<br/>Valid ISO3 localization in which the collaborator took part in |
 | role | **[ string](#string)**<br/>What role the collaborator had |
-## ContentRelation {#animeshon.knowledge.v1alpha1.ContentRelation}
+
+## <span id="animeshon.knowledge.v1alpha1.ContentRelation">ContentRelation</span>
+
 ContentRelation represent the relation between 2 different content.
 The ContentReleation field is common to both the content, therefore the server do not need
 to have both relations (from content A to B, and from B to A) because it will generate automatically
@@ -301,6 +332,7 @@ the reverse relation.
 The relation has to be read as
 entity -> has <relation> -> which is <related>
 EG: Naruto -> Sequel -> Naruto Shippuden = <Naruto> has <sequel>, which is <Naruto Shippuden>
+
 | Field | Description |
 | --- | --- |
 | related | **[ Edge](#Edge)**<br/>Object of the relation |
@@ -337,8 +369,11 @@ SIDESTORY side story SIDE_STORY
 ORIGINAL the object is the original of the subject this implies that the subject is the parody or fan made object ORIGINAL
 
 PARODY is parody PARODY |
-## Contribution {#animeshon.knowledge.v1alpha1.Contribution}
+
+## <span id="animeshon.knowledge.v1alpha1.Contribution">Contribution</span>
+
 Contribution is the overall reppresentation of the contribution
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the contribution. Required resource name |
@@ -349,25 +384,37 @@ Contribution is the overall reppresentation of the contribution
 | create_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>When the album was created. |
 | update_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>When the album was updated. |
 | review_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>When the album was reviewed. |
-## ContributionChanges {#animeshon.knowledge.v1alpha1.ContributionChanges}
+
+## <span id="animeshon.knowledge.v1alpha1.ContributionChanges">ContributionChanges</span>
+
 ContributionChanges decribes all the operations the contribution performs on an arbitrary number of entities
+
 | Field | Description |
 | --- | --- |
 | additions | **[repeated EntryEntity](#EntryEntity)**<br/>List of additions of the contribution |
 | deletions | **[repeated EntryEntity](#EntryEntity)**<br/>List of deletions of the cotributions Deleletion on primary entities (Anime/GraphicNovel/...) replace the old values while deletion on relations preserve the relation itself but mark it as deleted |
-## CreateContributionRequest {#animeshon.knowledge.v1alpha1.CreateContributionRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.CreateContributionRequest">CreateContributionRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | parent | **[ string](#string)**<br/>The parent resource where this contribution will be created. |
 | contribution | **[ Contribution](#Contribution)**<br/> |
 | changes | **[ ContributionChanges](#ContributionChanges)**<br/> |
-## Edge {#animeshon.knowledge.v1alpha1.Edge}
+
+## <span id="animeshon.knowledge.v1alpha1.Edge">Edge</span>
+
 Relation with another entity
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>Entity resource name |
-## EntryEntity {#animeshon.knowledge.v1alpha1.EntryEntity}
+
+## <span id="animeshon.knowledge.v1alpha1.EntryEntity">EntryEntity</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -384,7 +431,10 @@ Relation with another entity
 | **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _entity_<br />track | **[ Track](#Track)**<br/> |
 | **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _entity_<br />universe | **[ Universe](#Universe)**<br/> |
 | **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _entity_<br />visual_novel | **[ VisualNovel](#VisualNovel)**<br/> |
-## Episode {#animeshon.knowledge.v1alpha1.Episode}
+
+## <span id="animeshon.knowledge.v1alpha1.Episode">Episode</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -420,7 +470,10 @@ Other OTHER |
 | soundtracks | **[repeated Soundtrack](#Soundtrack)**<br/>List of soundtracks in the content |
 | voiceactings | **[repeated VoiceActing](#VoiceActing)**<br/>List of voice actors giving voice to the characters in the content |
 | length_seconds | **[ int32](#int32)**<br/>Length of the episode in seconds. |
-## GameRelease {#animeshon.knowledge.v1alpha1.GameRelease}
+
+## <span id="animeshon.knowledge.v1alpha1.GameRelease">GameRelease</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -613,17 +666,26 @@ The Entity is illegal following the U.N. guidelines ILLEGAL |
 | original | **[ string](#string)**<br/>Original specifies if the idea behind the content is original or if it's base on an existing opera. Parodies of other content are normally not original, because charactes/settings/storyline are not owned by the creator.
 
 Valid values: TRUE FALSE UNKNOWN |
-## GetContributionChangesRequest {#animeshon.knowledge.v1alpha1.GetContributionChangesRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.GetContributionChangesRequest">GetContributionChangesRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the requested contribution. Required resource name |
-## GetContributionRequest {#animeshon.knowledge.v1alpha1.GetContributionRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.GetContributionRequest">GetContributionRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the requested contribution. Required resource name |
-## GraphicNovel {#animeshon.knowledge.v1alpha1.GraphicNovel}
+
+## <span id="animeshon.knowledge.v1alpha1.GraphicNovel">GraphicNovel</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -703,7 +765,10 @@ Safe in USA MTR_RTN_USA_G |
 No Region Restriction NONE
 
 The Entity is illegal following the U.N. guidelines ILLEGAL |
-## LightNovel {#animeshon.knowledge.v1alpha1.LightNovel}
+
+## <span id="animeshon.knowledge.v1alpha1.LightNovel">LightNovel</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -766,7 +831,10 @@ Safe in USA MTR_RTN_USA_G |
 No Region Restriction NONE
 
 The Entity is illegal following the U.N. guidelines ILLEGAL |
-## ListContributionsRequest {#animeshon.knowledge.v1alpha1.ListContributionsRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.ListContributionsRequest">ListContributionsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -774,22 +842,31 @@ The Entity is illegal following the U.N. guidelines ILLEGAL |
 | page_size | **[ int32](#int32)**<br/>The maximum number of users to return. Server may return fewer users than requested. If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListContributionsResponse {#animeshon.knowledge.v1alpha1.ListContributionsResponse}
+
+## <span id="animeshon.knowledge.v1alpha1.ListContributionsResponse">ListContributionsResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | contributions | **[repeated Contribution](#Contribution)**<br/>The list of contributions. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## Marketplace {#animeshon.knowledge.v1alpha1.Marketplace}
+
+## <span id="animeshon.knowledge.v1alpha1.Marketplace">Marketplace</span>
+
 Marketplace is where to consume the content.
 The name field must point to a valid valid marketplace id in order to load icon and name of the marketplace.
 If the marketplace is limited to some specific country, add them to the field region following the IOS3 standard
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>Required resource name |
 | url | **[ string](#string)**<br/>Marketplace url |
 | region | **[ string](#string)**<br/>region in which the marketplace distributes |
-## Organization {#animeshon.knowledge.v1alpha1.Organization}
+
+## <span id="animeshon.knowledge.v1alpha1.Organization">Organization</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -809,7 +886,10 @@ Circle of people CIRCLE |
 | cover_image_id | **[ string](#string)**<br/>Cover Image id of the entity |
 | banner_image_id | **[ string](#string)**<br/>Banner Image id of the entity |
 | websites | **[repeated Website](#Website)**<br/>List of websiste related to the entity. Websites might be official websites, Social, Wiki Entries |
-## Person {#animeshon.knowledge.v1alpha1.Person}
+
+## <span id="animeshon.knowledge.v1alpha1.Person">Person</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -856,30 +936,42 @@ O- O_MINUS |
 | cover_image_id | **[ string](#string)**<br/>Cover Image id of the entity |
 | banner_image_id | **[ string](#string)**<br/>Banner Image id of the entity |
 | websites | **[repeated Website](#Website)**<br/>List of websiste related to the entity. Websites might be official websites, Social, Wiki Entries |
-## RejectContributionRequest {#animeshon.knowledge.v1alpha1.RejectContributionRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.RejectContributionRequest">RejectContributionRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>Required resource name |
-## ReviewContributionRequest {#animeshon.knowledge.v1alpha1.ReviewContributionRequest}
+
+## <span id="animeshon.knowledge.v1alpha1.ReviewContributionRequest">ReviewContributionRequest</span>
+
 ReviewContributionRequest specifies the edit to apply to an existing contribution
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>Name of the contribution |
 | comment | **[ string](#string)**<br/>Optional comment on the review |
 | changes | **[ ContributionChanges](#ContributionChanges)**<br/>Changes to the existing contribution New changes will be added on top of the existing ones |
 | discards | **[ ContributionChanges](#ContributionChanges)**<br/>Changes to discard from the contribution Discarded changes will be completely removed from the contribution |
-## Running {#animeshon.knowledge.v1alpha1.Running}
+
+## <span id="animeshon.knowledge.v1alpha1.Running">Running</span>
+
 Period in which the content has been aired/released/published for a particular localization
+
 | Field | Description |
 | --- | --- |
 | start_time | **[ google.type.Date](#google.type.Date)**<br/>Start of the publishing/airing/release |
 | end_time | **[ google.type.Date](#google.type.Date)**<br/>End of the publishing/airing/release Omitted if the content is still ONGOING |
 | localization | **[ string](#string)**<br/>Valid ISO3 localization |
-## Soundtrack {#animeshon.knowledge.v1alpha1.Soundtrack}
+
+## <span id="animeshon.knowledge.v1alpha1.Soundtrack">Soundtrack</span>
+
 Soundtrack exposes the information about which Track has been used in which Content in which localization and for what.
 The localization must be a valid ISO3 localization which identifies the language/full localization of the content's version 
 for which the Track is used
+
 | Field | Description |
 | --- | --- |
 | track | **[ Edge](#Edge)**<br/>Track used as soundtrack |
@@ -899,7 +991,10 @@ The track is used as image song IMAGE
 
 The track is used as theme song THEME |
 | localization | **[ string](#string)**<br/>Valid ISO3 localization in which the track was used |
-## Track {#animeshon.knowledge.v1alpha1.Track}
+
+## <span id="animeshon.knowledge.v1alpha1.Track">Track</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -914,7 +1009,10 @@ The track is used as theme song THEME |
 | websites | **[repeated Website](#Website)**<br/>List of websiste related to the entity. Websites might be official websites, Social, Wiki Entries |
 | marketplaces | **[repeated Marketplace](#Marketplace)**<br/>List of marketplaces related to the entry. Maketplaces tells where to buy / consume / read the entity |
 | staff | **[repeated Collaboration](#Collaboration)**<br/>List of people/organizations which contributed to the production/distribution of the content |
-## Universe {#animeshon.knowledge.v1alpha1.Universe}
+
+## <span id="animeshon.knowledge.v1alpha1.Universe">Universe</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -929,7 +1027,10 @@ The track is used as theme song THEME |
 | marketplaces | **[repeated Marketplace](#Marketplace)**<br/>List of marketplaces related to the entry. Maketplaces tells where to buy / consume / read the entity |
 | contents | **[repeated Edge](#Edge)**<br/>List of contents part of the universe Universes can include Anime, GraphicNovels, LightNovels and VisualNovels |
 | canonicals | **[repeated Edge](#Edge)**<br/>List of canonicals part of the universe |
-## VisualNovel {#animeshon.knowledge.v1alpha1.VisualNovel}
+
+## <span id="animeshon.knowledge.v1alpha1.VisualNovel">VisualNovel</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -1004,11 +1105,14 @@ No Region Restriction NONE
 
 The Entity is illegal following the U.N. guidelines ILLEGAL |
 | releases | **[repeated Edge](#Edge)**<br/>Releases are all those entities which practically make the content consumable Some examples are: Volumes for GraphicNovels/LightNovels/Chapters, BlueRays for Anime, Collector Editions... |
-## VoiceActing {#animeshon.knowledge.v1alpha1.VoiceActing}
+
+## <span id="animeshon.knowledge.v1alpha1.VoiceActing">VoiceActing</span>
+
 Voice Acting represent voice given by a person to a voiced entity in a specific content
 The Voice Acting is always field of the content and it must be localized.
 The localization must be a valid ISO3 localization which identifies the language/full localization of the content's version 
 for which the actor gave the voice to the entity
+
 | Field | Description |
 | --- | --- |
 | voiced | **[ Edge](#Edge)**<br/>The entity receiving the voice Character or VoiceOver |
@@ -1017,14 +1121,17 @@ for which the actor gave the voice to the entity
 | primary | **[ string](#string)**<br/>Voices can be primary or not. Primary voices are those lasting for the majority of the conte While Secondary voices are normally used in flashbacks or side events
 
 Valid values: TRUE FALSE UNKNOWN |
-## Website {#animeshon.knowledge.v1alpha1.Website}
+
+## <span id="animeshon.knowledge.v1alpha1.Website">Website</span>
+
 Any kind of website related to the entity.
 Could be official website, twitter, or external resources such as wikipedia
+
 | Field | Description |
 | --- | --- |
 | url | **[ string](#string)**<br/>Website url |
 
-## Contribution.State {#animeshon.knowledge.v1alpha1.Contribution.State}
+## <span id="animeshon.knowledge.v1alpha1.Contribution.State">Contribution.State</span>
 
 
 | Name | Description |

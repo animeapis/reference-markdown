@@ -25,77 +25,97 @@
 
 - [Release.State](#animeshon.release.v1alpha1.Release.State)
 - [Visibility](#animeshon.release.v1alpha1.Visibility)
-## Publisher {#animeshon.release.v1alpha1.Publisher}
+## <span id="animeshon.release.v1alpha1.Publisher">Publisher</span>
 
-| GetRelease |
+
+
+| <span id="animeshon.release.v1alpha1.Publisher.GetRelease">GetRelease</span> |
 | --- |
-| **rpc** GetRelease([GetReleaseRequest](#animeshon.release.v1alpha1.GetReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)<br/> |
+| **rpc GetRelease([GetReleaseRequest](#animeshon.release.v1alpha1.GetReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)**<br/><br/> |
 
-| ListReleases |
+| <span id="animeshon.release.v1alpha1.Publisher.ListReleases">ListReleases</span> |
 | --- |
-| **rpc** ListReleases([ListReleasesRequest](#animeshon.release.v1alpha1.ListReleasesRequest)) [ListReleasesResponse](#animeshon.release.v1alpha1.ListReleasesResponse)<br/> |
+| **rpc ListReleases([ListReleasesRequest](#animeshon.release.v1alpha1.ListReleasesRequest)) [ListReleasesResponse](#animeshon.release.v1alpha1.ListReleasesResponse)**<br/><br/> |
 
-| CreateRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.CreateRelease">CreateRelease</span> |
 | --- |
-| **rpc** CreateRelease([CreateReleaseRequest](#animeshon.release.v1alpha1.CreateReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)<br/> |
+| **rpc CreateRelease([CreateReleaseRequest](#animeshon.release.v1alpha1.CreateReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)**<br/><br/> |
 
-| UpdateRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.UpdateRelease">UpdateRelease</span> |
 | --- |
-| **rpc** UpdateRelease([UpdateReleaseRequest](#animeshon.release.v1alpha1.UpdateReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)<br/> |
+| **rpc UpdateRelease([UpdateReleaseRequest](#animeshon.release.v1alpha1.UpdateReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)**<br/><br/> |
 
-| DeleteRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.DeleteRelease">DeleteRelease</span> |
 | --- |
-| **rpc** DeleteRelease([DeleteReleaseRequest](#animeshon.release.v1alpha1.DeleteReleaseRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/>The release is soft-deleted and a grace period is granted before complete deletion. During this grace period the release can be recovered. |
+| **rpc DeleteRelease([DeleteReleaseRequest](#animeshon.release.v1alpha1.DeleteReleaseRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/>The release is soft-deleted and a grace period is granted before complete deletion. During this grace period the release can be recovered. |
 
-| UndeleteRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.UndeleteRelease">UndeleteRelease</span> |
 | --- |
-| **rpc** UndeleteRelease([UndeleteReleaseRequest](#animeshon.release.v1alpha1.UndeleteReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)<br/>This method allows to recover a release while still in the grace period. |
+| **rpc UndeleteRelease([UndeleteReleaseRequest](#animeshon.release.v1alpha1.UndeleteReleaseRequest)) [Release](#animeshon.release.v1alpha1.Release)**<br/><br/>This method allows to recover a release while still in the grace period. |
 
-| PublishRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.PublishRelease">PublishRelease</span> |
 | --- |
-| **rpc** PublishRelease([PublishReleaseRequest](#animeshon.release.v1alpha1.PublishReleaseRequest)) [PublishReleaseResponse](#animeshon.release.v1alpha1.PublishReleaseResponse)<br/>The release is marked as immediately available to the public. |
+| **rpc PublishRelease([PublishReleaseRequest](#animeshon.release.v1alpha1.PublishReleaseRequest)) [PublishReleaseResponse](#animeshon.release.v1alpha1.PublishReleaseResponse)**<br/><br/>The release is marked as immediately available to the public. |
 
-| UnpublishRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.UnpublishRelease">UnpublishRelease</span> |
 | --- |
-| **rpc** UnpublishRelease([UnpublishReleaseRequest](#animeshon.release.v1alpha1.UnpublishReleaseRequest)) [UnpublishReleaseResponse](#animeshon.release.v1alpha1.UnpublishReleaseResponse)<br/>The release is unpublished and marked as a draft, associated non-authoritative will automatically be marked as suspended and hidden from the general public. |
+| **rpc UnpublishRelease([UnpublishReleaseRequest](#animeshon.release.v1alpha1.UnpublishReleaseRequest)) [UnpublishReleaseResponse](#animeshon.release.v1alpha1.UnpublishReleaseResponse)**<br/><br/>The release is unpublished and marked as a draft, associated non-authoritative will automatically be marked as suspended and hidden from the general public. |
 
-| ScheduleRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.ScheduleRelease">ScheduleRelease</span> |
 | --- |
-| **rpc** ScheduleRelease([ScheduleReleaseRequest](#animeshon.release.v1alpha1.ScheduleReleaseRequest)) [ScheduleReleaseResponse](#animeshon.release.v1alpha1.ScheduleReleaseResponse)<br/>The release is scheduled to be released at a specific future date and time. |
+| **rpc ScheduleRelease([ScheduleReleaseRequest](#animeshon.release.v1alpha1.ScheduleReleaseRequest)) [ScheduleReleaseResponse](#animeshon.release.v1alpha1.ScheduleReleaseResponse)**<br/><br/>The release is scheduled to be released at a specific future date and time. |
 
-| CancelRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.CancelRelease">CancelRelease</span> |
 | --- |
-| **rpc** CancelRelease([CancelReleaseRequest](#animeshon.release.v1alpha1.CancelReleaseRequest)) [CancelReleaseResponse](#animeshon.release.v1alpha1.CancelReleaseResponse)<br/>This method can only be called on scheduled releases. The scheduling is cancelled and the release is marked as a draft. |
+| **rpc CancelRelease([CancelReleaseRequest](#animeshon.release.v1alpha1.CancelReleaseRequest)) [CancelReleaseResponse](#animeshon.release.v1alpha1.CancelReleaseResponse)**<br/><br/>This method can only be called on scheduled releases. The scheduling is cancelled and the release is marked as a draft. |
 
-| SuspendRelease |
+| <span id="animeshon.release.v1alpha1.Publisher.SuspendRelease">SuspendRelease</span> |
 | --- |
-| **rpc** SuspendRelease([SuspendReleaseRequest](#animeshon.release.v1alpha1.SuspendReleaseRequest)) [SuspendReleaseResponse](#animeshon.release.v1alpha1.SuspendReleaseResponse)<br/>This method can only be called on published releases marked as active. Any non-authoritative release associated to the specified release will also be automatically marked as suspended. |
+| **rpc SuspendRelease([SuspendReleaseRequest](#animeshon.release.v1alpha1.SuspendReleaseRequest)) [SuspendReleaseResponse](#animeshon.release.v1alpha1.SuspendReleaseResponse)**<br/><br/>This method can only be called on published releases marked as active. Any non-authoritative release associated to the specified release will also be automatically marked as suspended. |
 
-## CancelReleaseRequest {#animeshon.release.v1alpha1.CancelReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.CancelReleaseRequest">CancelReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to cancel. |
-## CancelReleaseResponse {#animeshon.release.v1alpha1.CancelReleaseResponse}
 
-## CreateReleaseRequest {#animeshon.release.v1alpha1.CreateReleaseRequest}
+## <span id="animeshon.release.v1alpha1.CancelReleaseResponse">CancelReleaseResponse</span>
+
+
+
+
+## <span id="animeshon.release.v1alpha1.CreateReleaseRequest">CreateReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | parent | **[ string](#string)**<br/>The parent this release belongs to. |
 | release | **[ Release](#Release)**<br/>The release to create. |
 | ttl | **[ google.protobuf.Duration](#google.protobuf.Duration)**<br/>The time-to-live indicating for how long this release should be published. If set to zero, the release will not have an expiration time. |
-## DeleteReleaseRequest {#animeshon.release.v1alpha1.DeleteReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.DeleteReleaseRequest">DeleteReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to delete. |
-## GetReleaseRequest {#animeshon.release.v1alpha1.GetReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.GetReleaseRequest">GetReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to retrieve. |
-## ListReleasesRequest {#animeshon.release.v1alpha1.ListReleasesRequest}
+
+## <span id="animeshon.release.v1alpha1.ListReleasesRequest">ListReleasesRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -103,21 +123,33 @@
 | page_size | **[ int32](#int32)**<br/>If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListReleasesResponse {#animeshon.release.v1alpha1.ListReleasesResponse}
+
+## <span id="animeshon.release.v1alpha1.ListReleasesResponse">ListReleasesResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | releases | **[repeated Release](#Release)**<br/>The list of releases. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## PublishReleaseRequest {#animeshon.release.v1alpha1.PublishReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.PublishReleaseRequest">PublishReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to publish. |
 | strategy | **[ ReleaseStrategy](#ReleaseStrategy)**<br/>The release strategy to use. |
-## PublishReleaseResponse {#animeshon.release.v1alpha1.PublishReleaseResponse}
 
-## Release {#animeshon.release.v1alpha1.Release}
+## <span id="animeshon.release.v1alpha1.PublishReleaseResponse">PublishReleaseResponse</span>
+
+
+
+
+## <span id="animeshon.release.v1alpha1.Release">Release</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -141,53 +173,83 @@ Furthermore, there can only be one authoritative release per resource, which mea
 | update_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>The latest timestamp at which the release was updated. |
 | expire_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>The timestamp at which the release will expire. |
 | delete_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>The timestamp at which the release was deleted. |
-## Release.LabelsEntry {#animeshon.release.v1alpha1.Release.LabelsEntry}
+
+## <span id="animeshon.release.v1alpha1.Release.LabelsEntry">Release.LabelsEntry</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | key | **[ string](#string)**<br/> |
 | value | **[ string](#string)**<br/> |
-## ReleaseStrategy {#animeshon.release.v1alpha1.ReleaseStrategy}
+
+## <span id="animeshon.release.v1alpha1.ReleaseStrategy">ReleaseStrategy</span>
+
 The release strategy describes how a release should be published.
+
 | Field | Description |
 | --- | --- |
 | membership_only | **[ bool](#bool)**<br/>Whether the release should be available only to the members of a group. |
-## ScheduleReleaseRequest {#animeshon.release.v1alpha1.ScheduleReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.ScheduleReleaseRequest">ScheduleReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to schedule. |
 | strategy | **[ ReleaseStrategy](#ReleaseStrategy)**<br/>The release strategy to use. |
-## ScheduleReleaseResponse {#animeshon.release.v1alpha1.ScheduleReleaseResponse}
 
-## SuspendReleaseRequest {#animeshon.release.v1alpha1.SuspendReleaseRequest}
+## <span id="animeshon.release.v1alpha1.ScheduleReleaseResponse">ScheduleReleaseResponse</span>
+
+
+
+
+## <span id="animeshon.release.v1alpha1.SuspendReleaseRequest">SuspendReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to suspend. |
 | reason | **[ string](#string)**<br/>The reason why the release has been suspended. |
-## SuspendReleaseResponse {#animeshon.release.v1alpha1.SuspendReleaseResponse}
 
-## UndeleteReleaseRequest {#animeshon.release.v1alpha1.UndeleteReleaseRequest}
+## <span id="animeshon.release.v1alpha1.SuspendReleaseResponse">SuspendReleaseResponse</span>
+
+
+
+
+## <span id="animeshon.release.v1alpha1.UndeleteReleaseRequest">UndeleteReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to undelete. |
-## UnpublishReleaseRequest {#animeshon.release.v1alpha1.UnpublishReleaseRequest}
+
+## <span id="animeshon.release.v1alpha1.UnpublishReleaseRequest">UnpublishReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the release to publish. |
-## UnpublishReleaseResponse {#animeshon.release.v1alpha1.UnpublishReleaseResponse}
 
-## UpdateReleaseRequest {#animeshon.release.v1alpha1.UpdateReleaseRequest}
+## <span id="animeshon.release.v1alpha1.UnpublishReleaseResponse">UnpublishReleaseResponse</span>
+
+
+
+
+## <span id="animeshon.release.v1alpha1.UpdateReleaseRequest">UpdateReleaseRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | release | **[ Release](#Release)**<br/>The release to update. |
 | update_mask | **[ google.protobuf.FieldMask](#google.protobuf.FieldMask)**<br/>The field mask to determine which fields are to be updated. If empty, the server will assume all fields are to be updated. |
 
-## Release.State {#animeshon.release.v1alpha1.Release.State}
+## <span id="animeshon.release.v1alpha1.Release.State">Release.State</span>
 
 
 | Name | Description |
@@ -199,7 +261,7 @@ The release strategy describes how a release should be published.
 | SUSPENDED | The release has been suspended. This state might automatically being set for non-authoritative releases when their authoritative release is also suspended, unpublished, or deleted. This state might also be set when a release is breaching general terms and conditions or is in conflict with community guidelines or internal governing policies. |
 | DELETED | The release has been marked for deletion. |
 
-## Visibility {#animeshon.release.v1alpha1.Visibility}
+## <span id="animeshon.release.v1alpha1.Visibility">Visibility</span>
 
 
 | Name | Description |

@@ -29,180 +29,242 @@
 
 - [Gender](#animeshon.identity.v1alpha1.Gender)
 - [UserSettings.Visibility](#animeshon.identity.v1alpha1.UserSettings.Visibility)
-## Identity {#animeshon.identity.v1alpha1.Identity}
+## <span id="animeshon.identity.v1alpha1.Identity">Identity</span>
 
-| GetUserProfile |
+
+
+| <span id="animeshon.identity.v1alpha1.Identity.GetUserProfile">GetUserProfile</span> |
 | --- |
-| **rpc** GetUserProfile([GetUserProfileRequest](#animeshon.identity.v1alpha1.GetUserProfileRequest)) [UserProfile](#animeshon.identity.v1alpha1.UserProfile)<br/> |
+| **rpc GetUserProfile([GetUserProfileRequest](#animeshon.identity.v1alpha1.GetUserProfileRequest)) [UserProfile](#animeshon.identity.v1alpha1.UserProfile)**<br/><br/> |
 
-| GetUser |
+| <span id="animeshon.identity.v1alpha1.Identity.GetUser">GetUser</span> |
 | --- |
-| **rpc** GetUser([GetUserRequest](#animeshon.identity.v1alpha1.GetUserRequest)) [User](#animeshon.identity.v1alpha1.User)<br/> |
+| **rpc GetUser([GetUserRequest](#animeshon.identity.v1alpha1.GetUserRequest)) [User](#animeshon.identity.v1alpha1.User)**<br/><br/> |
 
-| ListUsers |
+| <span id="animeshon.identity.v1alpha1.Identity.ListUsers">ListUsers</span> |
 | --- |
-| **rpc** ListUsers([ListUsersRequest](#animeshon.identity.v1alpha1.ListUsersRequest)) [ListUsersResponse](#animeshon.identity.v1alpha1.ListUsersResponse)<br/> |
+| **rpc ListUsers([ListUsersRequest](#animeshon.identity.v1alpha1.ListUsersRequest)) [ListUsersResponse](#animeshon.identity.v1alpha1.ListUsersResponse)**<br/><br/> |
 
-| CreateUser |
+| <span id="animeshon.identity.v1alpha1.Identity.CreateUser">CreateUser</span> |
 | --- |
-| **rpc** CreateUser([CreateUserRequest](#animeshon.identity.v1alpha1.CreateUserRequest)) [User](#animeshon.identity.v1alpha1.User)<br/> |
+| **rpc CreateUser([CreateUserRequest](#animeshon.identity.v1alpha1.CreateUserRequest)) [User](#animeshon.identity.v1alpha1.User)**<br/><br/> |
 
-| UpdateUser |
+| <span id="animeshon.identity.v1alpha1.Identity.UpdateUser">UpdateUser</span> |
 | --- |
-| **rpc** UpdateUser([UpdateUserRequest](#animeshon.identity.v1alpha1.UpdateUserRequest)) [User](#animeshon.identity.v1alpha1.User)<br/> |
+| **rpc UpdateUser([UpdateUserRequest](#animeshon.identity.v1alpha1.UpdateUserRequest)) [User](#animeshon.identity.v1alpha1.User)**<br/><br/> |
 
-| DeleteUser |
+| <span id="animeshon.identity.v1alpha1.Identity.DeleteUser">DeleteUser</span> |
 | --- |
-| **rpc** DeleteUser([DeleteUserRequest](#animeshon.identity.v1alpha1.DeleteUserRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeleteUser([DeleteUserRequest](#animeshon.identity.v1alpha1.DeleteUserRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-| GetUserSettings |
+| <span id="animeshon.identity.v1alpha1.Identity.GetUserSettings">GetUserSettings</span> |
 | --- |
-| **rpc** GetUserSettings([GetUserSettingsRequest](#animeshon.identity.v1alpha1.GetUserSettingsRequest)) [UserSettings](#animeshon.identity.v1alpha1.UserSettings)<br/> |
+| **rpc GetUserSettings([GetUserSettingsRequest](#animeshon.identity.v1alpha1.GetUserSettingsRequest)) [UserSettings](#animeshon.identity.v1alpha1.UserSettings)**<br/><br/> |
 
-| UpdateUserSettings |
+| <span id="animeshon.identity.v1alpha1.Identity.UpdateUserSettings">UpdateUserSettings</span> |
 | --- |
-| **rpc** UpdateUserSettings([UpdateUserSettingsRequest](#animeshon.identity.v1alpha1.UpdateUserSettingsRequest)) [UserSettings](#animeshon.identity.v1alpha1.UserSettings)<br/> |
+| **rpc UpdateUserSettings([UpdateUserSettingsRequest](#animeshon.identity.v1alpha1.UpdateUserSettingsRequest)) [UserSettings](#animeshon.identity.v1alpha1.UserSettings)**<br/><br/> |
 
-| GetUserNotifications |
+| <span id="animeshon.identity.v1alpha1.Identity.GetUserNotifications">GetUserNotifications</span> |
 | --- |
-| **rpc** GetUserNotifications([GetUserNotificationsRequest](#animeshon.identity.v1alpha1.GetUserNotificationsRequest)) [UserNotifications](#animeshon.identity.v1alpha1.UserNotifications)<br/> |
+| **rpc GetUserNotifications([GetUserNotificationsRequest](#animeshon.identity.v1alpha1.GetUserNotificationsRequest)) [UserNotifications](#animeshon.identity.v1alpha1.UserNotifications)**<br/><br/> |
 
-| UpdateUserNotifications |
+| <span id="animeshon.identity.v1alpha1.Identity.UpdateUserNotifications">UpdateUserNotifications</span> |
 | --- |
-| **rpc** UpdateUserNotifications([UpdateUserNotificationsRequest](#animeshon.identity.v1alpha1.UpdateUserNotificationsRequest)) [UserNotifications](#animeshon.identity.v1alpha1.UserNotifications)<br/> |
+| **rpc UpdateUserNotifications([UpdateUserNotificationsRequest](#animeshon.identity.v1alpha1.UpdateUserNotificationsRequest)) [UserNotifications](#animeshon.identity.v1alpha1.UserNotifications)**<br/><br/> |
 
-| GetUserDefaults |
+| <span id="animeshon.identity.v1alpha1.Identity.GetUserDefaults">GetUserDefaults</span> |
 | --- |
-| **rpc** GetUserDefaults([GetUserDefaultsRequest](#animeshon.identity.v1alpha1.GetUserDefaultsRequest)) [UserDefaults](#animeshon.identity.v1alpha1.UserDefaults)<br/> |
+| **rpc GetUserDefaults([GetUserDefaultsRequest](#animeshon.identity.v1alpha1.GetUserDefaultsRequest)) [UserDefaults](#animeshon.identity.v1alpha1.UserDefaults)**<br/><br/> |
 
-| GetGroup |
+| <span id="animeshon.identity.v1alpha1.Identity.GetGroup">GetGroup</span> |
 | --- |
-| **rpc** GetGroup([GetGroupRequest](#animeshon.identity.v1alpha1.GetGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)<br/> |
+| **rpc GetGroup([GetGroupRequest](#animeshon.identity.v1alpha1.GetGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)**<br/><br/> |
 
-| ListGroups |
+| <span id="animeshon.identity.v1alpha1.Identity.ListGroups">ListGroups</span> |
 | --- |
-| **rpc** ListGroups([ListGroupsRequest](#animeshon.identity.v1alpha1.ListGroupsRequest)) [ListGroupsResponse](#animeshon.identity.v1alpha1.ListGroupsResponse)<br/> |
+| **rpc ListGroups([ListGroupsRequest](#animeshon.identity.v1alpha1.ListGroupsRequest)) [ListGroupsResponse](#animeshon.identity.v1alpha1.ListGroupsResponse)**<br/><br/> |
 
-| CreateGroup |
+| <span id="animeshon.identity.v1alpha1.Identity.CreateGroup">CreateGroup</span> |
 | --- |
-| **rpc** CreateGroup([CreateGroupRequest](#animeshon.identity.v1alpha1.CreateGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)<br/> |
+| **rpc CreateGroup([CreateGroupRequest](#animeshon.identity.v1alpha1.CreateGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)**<br/><br/> |
 
-| UpdateGroup |
+| <span id="animeshon.identity.v1alpha1.Identity.UpdateGroup">UpdateGroup</span> |
 | --- |
-| **rpc** UpdateGroup([UpdateGroupRequest](#animeshon.identity.v1alpha1.UpdateGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)<br/> |
+| **rpc UpdateGroup([UpdateGroupRequest](#animeshon.identity.v1alpha1.UpdateGroupRequest)) [Group](#animeshon.identity.v1alpha1.Group)**<br/><br/> |
 
-| DeleteGroup |
+| <span id="animeshon.identity.v1alpha1.Identity.DeleteGroup">DeleteGroup</span> |
 | --- |
-| **rpc** DeleteGroup([DeleteGroupRequest](#animeshon.identity.v1alpha1.DeleteGroupRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeleteGroup([DeleteGroupRequest](#animeshon.identity.v1alpha1.DeleteGroupRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-## CreateGroupRequest {#animeshon.identity.v1alpha1.CreateGroupRequest}
+
+## <span id="animeshon.identity.v1alpha1.CreateGroupRequest">CreateGroupRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | group | **[ Group](#Group)**<br/>The group to create. |
-## CreateUserRequest {#animeshon.identity.v1alpha1.CreateUserRequest}
+
+## <span id="animeshon.identity.v1alpha1.CreateUserRequest">CreateUserRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | user | **[ User](#User)**<br/>The user to create. |
-## DeleteGroupRequest {#animeshon.identity.v1alpha1.DeleteGroupRequest}
+
+## <span id="animeshon.identity.v1alpha1.DeleteGroupRequest">DeleteGroupRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the group to delete. |
-## DeleteUserRequest {#animeshon.identity.v1alpha1.DeleteUserRequest}
+
+## <span id="animeshon.identity.v1alpha1.DeleteUserRequest">DeleteUserRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to delete. |
-## GetGroupRequest {#animeshon.identity.v1alpha1.GetGroupRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetGroupRequest">GetGroupRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the group to retrieve. |
-## GetUserDefaultsRequest {#animeshon.identity.v1alpha1.GetUserDefaultsRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetUserDefaultsRequest">GetUserDefaultsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to retrieve the defaults from. |
-## GetUserNotificationsRequest {#animeshon.identity.v1alpha1.GetUserNotificationsRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetUserNotificationsRequest">GetUserNotificationsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to retrieve the notifications from. |
-## GetUserProfileRequest {#animeshon.identity.v1alpha1.GetUserProfileRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetUserProfileRequest">GetUserProfileRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to retrieve the profile from. |
-## GetUserRequest {#animeshon.identity.v1alpha1.GetUserRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetUserRequest">GetUserRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to retrieve. |
-## GetUserSettingsRequest {#animeshon.identity.v1alpha1.GetUserSettingsRequest}
+
+## <span id="animeshon.identity.v1alpha1.GetUserSettingsRequest">GetUserSettingsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the user to retrieve the settings from. |
-## Group {#animeshon.identity.v1alpha1.Group}
+
+## <span id="animeshon.identity.v1alpha1.Group">Group</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the group. |
 | members | **[repeated string](#string)**<br/>The list of members of the group. Groups might include other groups. |
 | etag | **[ bytes](#bytes)**<br/>An etag for concurrency control, ignored during creation. |
-## ListGroupsRequest {#animeshon.identity.v1alpha1.ListGroupsRequest}
+
+## <span id="animeshon.identity.v1alpha1.ListGroupsRequest">ListGroupsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | page_size | **[ int32](#int32)**<br/>If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListGroupsResponse {#animeshon.identity.v1alpha1.ListGroupsResponse}
+
+## <span id="animeshon.identity.v1alpha1.ListGroupsResponse">ListGroupsResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | groups | **[repeated Group](#Group)**<br/>The list of groups. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## ListUsersRequest {#animeshon.identity.v1alpha1.ListUsersRequest}
+
+## <span id="animeshon.identity.v1alpha1.ListUsersRequest">ListUsersRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | page_size | **[ int32](#int32)**<br/>If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListUsersResponse {#animeshon.identity.v1alpha1.ListUsersResponse}
+
+## <span id="animeshon.identity.v1alpha1.ListUsersResponse">ListUsersResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | users | **[repeated User](#User)**<br/>The list of users. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## UpdateGroupRequest {#animeshon.identity.v1alpha1.UpdateGroupRequest}
+
+## <span id="animeshon.identity.v1alpha1.UpdateGroupRequest">UpdateGroupRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | group | **[ Group](#Group)**<br/>The group to update. |
 | update_mask | **[ google.protobuf.FieldMask](#google.protobuf.FieldMask)**<br/>The field mask to determine which fields are to be updated. If empty, the server will assume all fields are to be updated. |
-## UpdateUserNotificationsRequest {#animeshon.identity.v1alpha1.UpdateUserNotificationsRequest}
+
+## <span id="animeshon.identity.v1alpha1.UpdateUserNotificationsRequest">UpdateUserNotificationsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | notifications | **[ UserNotifications](#UserNotifications)**<br/>The user notifications to update. |
 | update_mask | **[ google.protobuf.FieldMask](#google.protobuf.FieldMask)**<br/>The field mask to determine which fields are to be updated. If empty, the server will assume all fields are to be updated. |
-## UpdateUserRequest {#animeshon.identity.v1alpha1.UpdateUserRequest}
+
+## <span id="animeshon.identity.v1alpha1.UpdateUserRequest">UpdateUserRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | user | **[ User](#User)**<br/>The user to update. |
 | update_mask | **[ google.protobuf.FieldMask](#google.protobuf.FieldMask)**<br/>The field mask to determine which fields are to be updated. If empty, the server will assume all fields are to be updated. |
-## UpdateUserSettingsRequest {#animeshon.identity.v1alpha1.UpdateUserSettingsRequest}
+
+## <span id="animeshon.identity.v1alpha1.UpdateUserSettingsRequest">UpdateUserSettingsRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | settings | **[ UserSettings](#UserSettings)**<br/>The user settings to update. |
 | update_mask | **[ google.protobuf.FieldMask](#google.protobuf.FieldMask)**<br/>The field mask to determine which fields are to be updated. If empty, the server will assume all fields are to be updated. |
-## User {#animeshon.identity.v1alpha1.User}
+
+## <span id="animeshon.identity.v1alpha1.User">User</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -222,7 +284,10 @@
 | gender | **[ Gender](#Gender)**<br/>The gender of the user. |
 | profile_image | **[ string](#string)**<br/>The profile image of the user. |
 | banner_image | **[ string](#string)**<br/>The banner image of the user. |
-## UserDefaults {#animeshon.identity.v1alpha1.UserDefaults}
+
+## <span id="animeshon.identity.v1alpha1.UserDefaults">UserDefaults</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -230,16 +295,22 @@
 | album_banner | **[ string](#string)**<br/>The system-managed album dedicated to user banner images. |
 | playlist_liked | **[ string](#string)**<br/>The system-managed playlist dedicated to user liked content. |
 | playlist_later | **[ string](#string)**<br/>The system-managed playlist dedicated to user saved for later content. |
-## UserNotifications {#animeshon.identity.v1alpha1.UserNotifications}
+
+## <span id="animeshon.identity.v1alpha1.UserNotifications">UserNotifications</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the user. |
-## UserProfile {#animeshon.identity.v1alpha1.UserProfile}
+
+## <span id="animeshon.identity.v1alpha1.UserProfile">UserProfile</span>
+
 This message is returned only when a user wants to fetch information about
 another user and the amount of information returned is greatly reduced to
 ensure that personal and confidential information is never disclosed by
 accident to other users. The user profile is read-only.
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the user. |
@@ -249,7 +320,10 @@ accident to other users. The user profile is read-only.
 | discriminator | **[ string](#string)**<br/>The public discriminator of the user. |
 | birthday | **[ google.type.Date](#google.type.Date)**<br/>The birthday of the user, this value is hidden for private profiles. |
 | gender | **[ Gender](#Gender)**<br/>The gender of the user, this value is hidden for private profiles. |
-## UserSettings {#animeshon.identity.v1alpha1.UserSettings}
+
+## <span id="animeshon.identity.v1alpha1.UserSettings">UserSettings</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -258,7 +332,7 @@ accident to other users. The user profile is read-only.
 | show_explicit_content | **[ bool](#bool)**<br/>Whether the user choose to see explicit content during navigation. |
 | enable_developer_mode | **[ bool](#bool)**<br/>Whether the user has enabled the developer mode. |
 
-## Gender {#animeshon.identity.v1alpha1.Gender}
+## <span id="animeshon.identity.v1alpha1.Gender">Gender</span>
 
 
 | Name | Description |
@@ -268,7 +342,7 @@ accident to other users. The user profile is read-only.
 | FEMALE | Female. |
 | OTHER | Any other non-binary gender. |
 
-## UserSettings.Visibility {#animeshon.identity.v1alpha1.UserSettings.Visibility}
+## <span id="animeshon.identity.v1alpha1.UserSettings.Visibility">UserSettings.Visibility</span>
 
 
 | Name | Description |

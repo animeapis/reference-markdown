@@ -14,76 +14,105 @@
 - [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)
 - [Page](#animeshon.webpage.v1alpha1.Page)
 
-## Archive {#animeshon.webpage.v1alpha1.Archive}
+## <span id="animeshon.webpage.v1alpha1.Archive">Archive</span>
 
-| GetPage |
+
+
+| <span id="animeshon.webpage.v1alpha1.Archive.GetPage">GetPage</span> |
 | --- |
-| **rpc** GetPage([GetPageRequest](#animeshon.webpage.v1alpha1.GetPageRequest)) [Page](#animeshon.webpage.v1alpha1.Page)<br/> |
+| **rpc GetPage([GetPageRequest](#animeshon.webpage.v1alpha1.GetPageRequest)) [Page](#animeshon.webpage.v1alpha1.Page)**<br/><br/> |
 
-| ListPages |
+| <span id="animeshon.webpage.v1alpha1.Archive.ListPages">ListPages</span> |
 | --- |
-| **rpc** ListPages([ListPagesRequest](#animeshon.webpage.v1alpha1.ListPagesRequest)) [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)<br/> |
+| **rpc ListPages([ListPagesRequest](#animeshon.webpage.v1alpha1.ListPagesRequest)) [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)**<br/><br/> |
 
-| ImportPage |
+| <span id="animeshon.webpage.v1alpha1.Archive.ImportPage">ImportPage</span> |
 | --- |
-| **rpc** ImportPage([ImportPageRequest](#animeshon.webpage.v1alpha1.ImportPageRequest)) [ImportPageResponse](#animeshon.webpage.v1alpha1.ImportPageResponse)<br/> |
+| **rpc ImportPage([ImportPageRequest](#animeshon.webpage.v1alpha1.ImportPageRequest)) [ImportPageResponse](#animeshon.webpage.v1alpha1.ImportPageResponse)**<br/><br/> |
 
-| CreatePage |
+| <span id="animeshon.webpage.v1alpha1.Archive.CreatePage">CreatePage</span> |
 | --- |
-| **rpc** CreatePage([CreatePageRequest](#animeshon.webpage.v1alpha1.CreatePageRequest)) [Page](#animeshon.webpage.v1alpha1.Page)<br/> |
+| **rpc CreatePage([CreatePageRequest](#animeshon.webpage.v1alpha1.CreatePageRequest)) [Page](#animeshon.webpage.v1alpha1.Page)**<br/><br/> |
 
-| DeletePage |
+| <span id="animeshon.webpage.v1alpha1.Archive.DeletePage">DeletePage</span> |
 | --- |
-| **rpc** DeletePage([DeletePageRequest](#animeshon.webpage.v1alpha1.DeletePageRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeletePage([DeletePageRequest](#animeshon.webpage.v1alpha1.DeletePageRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-## CreatePageRequest {#animeshon.webpage.v1alpha1.CreatePageRequest}
+
+## <span id="animeshon.webpage.v1alpha1.CreatePageRequest">CreatePageRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | parent | **[ string](#string)**<br/>The parent this page belongs to. |
 | page | **[ Page](#Page)**<br/>The page to create. |
-## DeletePageRequest {#animeshon.webpage.v1alpha1.DeletePageRequest}
+
+## <span id="animeshon.webpage.v1alpha1.DeletePageRequest">DeletePageRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the page to delete. |
-## GetPageRequest {#animeshon.webpage.v1alpha1.GetPageRequest}
+
+## <span id="animeshon.webpage.v1alpha1.GetPageRequest">GetPageRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the page to retrieve. |
 | selector | **[ string](#string)**<br/>The html selector to use to return the page content. |
-## ImportPageRequest {#animeshon.webpage.v1alpha1.ImportPageRequest}
+
+## <span id="animeshon.webpage.v1alpha1.ImportPageRequest">ImportPageRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the page to retrieve. |
 | cache_options | **[ ImportPageRequest.WebCacheOptions](#ImportPageRequest.WebCacheOptions)**<br/>The web cache options to apply to the import request. |
-## ImportPageRequest.WebCacheOptions {#animeshon.webpage.v1alpha1.ImportPageRequest.WebCacheOptions}
+
+## <span id="animeshon.webpage.v1alpha1.ImportPageRequest.WebCacheOptions">ImportPageRequest.WebCacheOptions</span>
+
 The WebCache options to be used when importing a page from a public site.
+
 | Field | Description |
 | --- | --- |
 | refresh | **[ bool](#bool)**<br/>If refresh is set to true the page is imported from the remote address regardless of an existing local cache, if the fetched page does not match the existing cache the new page is stored and a new resource is created, otherwise the existing (cached) resource is returned. |
 | ignore | **[ bool](#bool)**<br/>If ignore is set to true no cache lookup is performed and the page is imported into a new resource. If both "ignore" and "refresh" are set to true then "refresh" has no effect. |
-## ImportPageResponse {#animeshon.webpage.v1alpha1.ImportPageResponse}
+
+## <span id="animeshon.webpage.v1alpha1.ImportPageResponse">ImportPageResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />result | **[ ImportPageResponse.ImportPageResult](#ImportPageResponse.ImportPageResult)**<br/>If the operation was successful this field will return the imported page. |
 | **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />error | **[ ImportPageResponse.ImportPageRemoteError](#ImportPageResponse.ImportPageRemoteError)**<br/>If the operation ended up in a failure due to an error with the remote server this field will provide more details about the failure. |
 | cache_hit | **[ bool](#bool)**<br/>Whether this page was found in the cache. |
-## ImportPageResponse.ImportPageRemoteError {#animeshon.webpage.v1alpha1.ImportPageResponse.ImportPageRemoteError}
+
+## <span id="animeshon.webpage.v1alpha1.ImportPageResponse.ImportPageRemoteError">ImportPageResponse.ImportPageRemoteError</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | status_code | **[ int32](#int32)**<br/>The status code returned from the remote server. |
 | details | **[ string](#string)**<br/>The details related to the import failure. |
-## ImportPageResponse.ImportPageResult {#animeshon.webpage.v1alpha1.ImportPageResponse.ImportPageResult}
+
+## <span id="animeshon.webpage.v1alpha1.ImportPageResponse.ImportPageResult">ImportPageResponse.ImportPageResult</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | page | **[ Page](#Page)**<br/>The successfully imported page. |
-## ListPagesRequest {#animeshon.webpage.v1alpha1.ListPagesRequest}
+
+## <span id="animeshon.webpage.v1alpha1.ListPagesRequest">ListPagesRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -91,13 +120,19 @@ The WebCache options to be used when importing a page from a public site.
 | page_size | **[ int32](#int32)**<br/>If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListPagesResponse {#animeshon.webpage.v1alpha1.ListPagesResponse}
+
+## <span id="animeshon.webpage.v1alpha1.ListPagesResponse">ListPagesResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | pages | **[repeated Page](#Page)**<br/>The list of pages. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## Page {#animeshon.webpage.v1alpha1.Page}
+
+## <span id="animeshon.webpage.v1alpha1.Page">Page</span>
+
+
 
 | Field | Description |
 | --- | --- |

@@ -10,29 +10,34 @@
 - [ListChaptersResponse](#animeshon.product.v1alpha1.ListChaptersResponse)
 - [UpdateChapterRequest](#animeshon.product.v1alpha1.UpdateChapterRequest)
 
-## ChapterService {#animeshon.product.v1alpha1.ChapterService}
+## <span id="animeshon.product.v1alpha1.ChapterService">ChapterService</span>
 
-| GetChapter |
+
+
+| <span id="animeshon.product.v1alpha1.ChapterService.GetChapter">GetChapter</span> |
 | --- |
-| **rpc** GetChapter([GetChapterRequest](#animeshon.product.v1alpha1.GetChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)<br/> |
+| **rpc GetChapter([GetChapterRequest](#animeshon.product.v1alpha1.GetChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)**<br/><br/> |
 
-| ListChapters |
+| <span id="animeshon.product.v1alpha1.ChapterService.ListChapters">ListChapters</span> |
 | --- |
-| **rpc** ListChapters([ListChaptersRequest](#animeshon.product.v1alpha1.ListChaptersRequest)) [ListChaptersResponse](#animeshon.product.v1alpha1.ListChaptersResponse)<br/> |
+| **rpc ListChapters([ListChaptersRequest](#animeshon.product.v1alpha1.ListChaptersRequest)) [ListChaptersResponse](#animeshon.product.v1alpha1.ListChaptersResponse)**<br/><br/> |
 
-| CreateChapter |
+| <span id="animeshon.product.v1alpha1.ChapterService.CreateChapter">CreateChapter</span> |
 | --- |
-| **rpc** CreateChapter([CreateChapterRequest](#animeshon.product.v1alpha1.CreateChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)<br/> |
+| **rpc CreateChapter([CreateChapterRequest](#animeshon.product.v1alpha1.CreateChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)**<br/><br/> |
 
-| UpdateChapter |
+| <span id="animeshon.product.v1alpha1.ChapterService.UpdateChapter">UpdateChapter</span> |
 | --- |
-| **rpc** UpdateChapter([UpdateChapterRequest](#animeshon.product.v1alpha1.UpdateChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)<br/> |
+| **rpc UpdateChapter([UpdateChapterRequest](#animeshon.product.v1alpha1.UpdateChapterRequest)) [Chapter](#animeshon.product.v1alpha1.Chapter)**<br/><br/> |
 
-| DeleteChapter |
+| <span id="animeshon.product.v1alpha1.ChapterService.DeleteChapter">DeleteChapter</span> |
 | --- |
-| **rpc** DeleteChapter([DeleteChapterRequest](#animeshon.product.v1alpha1.DeleteChapterRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeleteChapter([DeleteChapterRequest](#animeshon.product.v1alpha1.DeleteChapterRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-## Chapter {#animeshon.product.v1alpha1.Chapter}
+
+## <span id="animeshon.product.v1alpha1.Chapter">Chapter</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -40,23 +45,35 @@
 | language_code | **[ string](#string)**<br/>The language code of the chapter pages. |
 | album | **[ string](#string)**<br/>The album that contains all images associated to this chapter. |
 | pages | **[repeated int64](#int64)**<br/>The ordered list of all pages represented as ids of images. |
-## CreateChapterRequest {#animeshon.product.v1alpha1.CreateChapterRequest}
+
+## <span id="animeshon.product.v1alpha1.CreateChapterRequest">CreateChapterRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | parent | **[ string](#string)**<br/>The parent this chapter belongs to. |
 | chapter | **[ Chapter](#Chapter)**<br/>The chapter to create. |
-## DeleteChapterRequest {#animeshon.product.v1alpha1.DeleteChapterRequest}
+
+## <span id="animeshon.product.v1alpha1.DeleteChapterRequest">DeleteChapterRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the chapter to delete. |
-## GetChapterRequest {#animeshon.product.v1alpha1.GetChapterRequest}
+
+## <span id="animeshon.product.v1alpha1.GetChapterRequest">GetChapterRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the chapter to retrieve. |
-## ListChaptersRequest {#animeshon.product.v1alpha1.ListChaptersRequest}
+
+## <span id="animeshon.product.v1alpha1.ListChaptersRequest">ListChaptersRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -64,13 +81,19 @@
 | page_size | **[ int32](#int32)**<br/>If unspecified, server will pick an appropriate default. |
 | page_token | **[ string](#string)**<br/>The value returned from the previous call. |
 | filter | **[ string](#string)**<br/>A filter to be applied to results. |
-## ListChaptersResponse {#animeshon.product.v1alpha1.ListChaptersResponse}
+
+## <span id="animeshon.product.v1alpha1.ListChaptersResponse">ListChaptersResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | chapters | **[repeated Chapter](#Chapter)**<br/>The list of chapters. |
 | next_page_token | **[ string](#string)**<br/>A token to retrieve next page of results. |
-## UpdateChapterRequest {#animeshon.product.v1alpha1.UpdateChapterRequest}
+
+## <span id="animeshon.product.v1alpha1.UpdateChapterRequest">UpdateChapterRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |

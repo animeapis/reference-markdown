@@ -9,26 +9,31 @@
 - [ListCachesRequest](#animeshon.webcache.v1alpha1.ListCachesRequest)
 - [ListCachesResponse](#animeshon.webcache.v1alpha1.ListCachesResponse)
 
-## WebCache {#animeshon.webcache.v1alpha1.WebCache}
+## <span id="animeshon.webcache.v1alpha1.WebCache">WebCache</span>
 
-| CreateCache |
+
+
+| <span id="animeshon.webcache.v1alpha1.WebCache.CreateCache">CreateCache</span> |
 | --- |
-| **rpc** CreateCache([CreateCacheRequest](#animeshon.webcache.v1alpha1.CreateCacheRequest)) [Cache](#animeshon.webcache.v1alpha1.Cache)<br/> |
+| **rpc CreateCache([CreateCacheRequest](#animeshon.webcache.v1alpha1.CreateCacheRequest)) [Cache](#animeshon.webcache.v1alpha1.Cache)**<br/><br/> |
 
-| ListCaches |
+| <span id="animeshon.webcache.v1alpha1.WebCache.ListCaches">ListCaches</span> |
 | --- |
-| **rpc** ListCaches([ListCachesRequest](#animeshon.webcache.v1alpha1.ListCachesRequest)) [ListCachesResponse](#animeshon.webcache.v1alpha1.ListCachesResponse)<br/> |
+| **rpc ListCaches([ListCachesRequest](#animeshon.webcache.v1alpha1.ListCachesRequest)) [ListCachesResponse](#animeshon.webcache.v1alpha1.ListCachesResponse)**<br/><br/> |
 
-| GetCache |
+| <span id="animeshon.webcache.v1alpha1.WebCache.GetCache">GetCache</span> |
 | --- |
-| **rpc** GetCache([GetCacheRequest](#animeshon.webcache.v1alpha1.GetCacheRequest)) [Cache](#animeshon.webcache.v1alpha1.Cache)<br/>See https://google.aip.dev/162#referencing-revisions for more information. |
+| **rpc GetCache([GetCacheRequest](#animeshon.webcache.v1alpha1.GetCacheRequest)) [Cache](#animeshon.webcache.v1alpha1.Cache)**<br/><br/>See https://google.aip.dev/162#referencing-revisions for more information. |
 
-| DeleteCache |
+| <span id="animeshon.webcache.v1alpha1.WebCache.DeleteCache">DeleteCache</span> |
 | --- |
-| **rpc** DeleteCache([DeleteCacheRequest](#animeshon.webcache.v1alpha1.DeleteCacheRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)<br/> |
+| **rpc DeleteCache([DeleteCacheRequest](#animeshon.webcache.v1alpha1.DeleteCacheRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
 
-## Cache {#animeshon.webcache.v1alpha1.Cache}
+
+## <span id="animeshon.webcache.v1alpha1.Cache">Cache</span>
+
 Cache contains meta information about a specific web resource.
+
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the cache, idempotently generated from the scheme and uri. |
@@ -41,23 +46,35 @@ Cache contains meta information about a specific web resource.
 | revision_id | **[ string](#string)**<br/>The randomly generated revision identifier of this cache. The format is an 8-character hexadecimal string. |
 | revision_create_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>The creation time indicating when this revision was created. |
 | revision_expire_time | **[ google.protobuf.Timestamp](#google.protobuf.Timestamp)**<br/>The expiration time indicating when this revision should no longer be considered valid. |
-## CreateCacheRequest {#animeshon.webcache.v1alpha1.CreateCacheRequest}
+
+## <span id="animeshon.webcache.v1alpha1.CreateCacheRequest">CreateCacheRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | cache | **[ Cache](#Cache)**<br/>The cache to be created. |
 | ttl | **[ google.protobuf.Duration](#google.protobuf.Duration)**<br/>The time-to-live indicating how long this cache should be considered valid. If set to zero, the cache will not have an expiration time. |
-## DeleteCacheRequest {#animeshon.webcache.v1alpha1.DeleteCacheRequest}
+
+## <span id="animeshon.webcache.v1alpha1.DeleteCacheRequest">DeleteCacheRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the cache to delete. |
-## GetCacheRequest {#animeshon.webcache.v1alpha1.GetCacheRequest}
+
+## <span id="animeshon.webcache.v1alpha1.GetCacheRequest">GetCacheRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
 | name | **[ string](#string)**<br/>The resource name of the requested cache. |
-## ListCachesRequest {#animeshon.webcache.v1alpha1.ListCachesRequest}
+
+## <span id="animeshon.webcache.v1alpha1.ListCachesRequest">ListCachesRequest</span>
+
+
 
 | Field | Description |
 | --- | --- |
@@ -67,7 +84,10 @@ Cache contains meta information about a specific web resource.
 
 Currently accepted filters include: - uri:{absolute uri} - resource:{full resource name} |
 | only_latest_revision | **[ bool](#bool)**<br/>Whether to return only the latest revision for each cache. |
-## ListCachesResponse {#animeshon.webcache.v1alpha1.ListCachesResponse}
+
+## <span id="animeshon.webcache.v1alpha1.ListCachesResponse">ListCachesResponse</span>
+
+
 
 | Field | Description |
 | --- | --- |
