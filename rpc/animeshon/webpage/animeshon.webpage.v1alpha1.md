@@ -71,7 +71,8 @@
 
 | Field | Description |
 | --- | --- |
-| name | **[ string](#string)**<br/>The name of the page to retrieve. |
+| parent | **[ string](#string)**<br/>The site parent of the page. |
+| uri | **[ string](#string)**<br/>A publicly-accessible page HTTP/HTTPS URL. When fetching pages from HTTP/HTTPS URLs, Animeshon cannot guarantee that the request will be completed. Your request may fail if the specified host denies the request (e.g. due to request throttling or DoS prevention), or if Animeshon throttles requests to the site for abuse prevention. |
 | cache_options | **[ ImportPageRequest.WebCacheOptions](#ImportPageRequest.WebCacheOptions)**<br/>The web cache options to apply to the import request. |
 
 ## <span id="animeshon.webpage.v1alpha1.ImportPageRequest.WebCacheOptions">ImportPageRequest.WebCacheOptions</span>
