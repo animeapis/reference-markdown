@@ -109,7 +109,7 @@ The WebCache options to be used when importing a page from a public site.
 
 | Field | Description |
 | --- | --- |
-| page | **[ Page](#Page)**<br/>The successfully imported page. |
+| name | **[ string](#string)**<br/>The page resource name. |
 
 ## <span id="animeshon.webpage.v1alpha1.ListPagesRequest">ListPagesRequest</span>
 
