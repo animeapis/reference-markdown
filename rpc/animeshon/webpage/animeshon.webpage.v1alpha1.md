@@ -26,13 +26,13 @@
 | --- |
 | **rpc ListPages([ListPagesRequest](#animeshon.webpage.v1alpha1.ListPagesRequest)) [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)**<br/><br/> |
 
-| <span id="animeshon.webpage.v1alpha1.Archive.ImportPage">ImportPage</span> |
-| --- |
-| **rpc ImportPage([ImportPageRequest](#animeshon.webpage.v1alpha1.ImportPageRequest)) [ImportPageResponse](#animeshon.webpage.v1alpha1.ImportPageResponse)**<br/><br/> |
-
 | <span id="animeshon.webpage.v1alpha1.Archive.CreatePage">CreatePage</span> |
 | --- |
 | **rpc CreatePage([CreatePageRequest](#animeshon.webpage.v1alpha1.CreatePageRequest)) [Page](#animeshon.webpage.v1alpha1.Page)**<br/><br/> |
+
+| <span id="animeshon.webpage.v1alpha1.Archive.ImportPage">ImportPage</span> |
+| --- |
+| **rpc ImportPage([ImportPageRequest](#animeshon.webpage.v1alpha1.ImportPageRequest)) [ImportPageResponse](#animeshon.webpage.v1alpha1.ImportPageResponse)**<br/><br/> |
 
 | <span id="animeshon.webpage.v1alpha1.Archive.DeletePage">DeletePage</span> |
 | --- |
