@@ -13,6 +13,8 @@
 - [ListPagesRequest](#animeshon.webpage.v1alpha1.ListPagesRequest)
 - [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)
 - [Page](#animeshon.webpage.v1alpha1.Page)
+- [QueryPageRequest](#animeshon.webpage.v1alpha1.QueryPageRequest)
+- [QueryPageResponse](#animeshon.webpage.v1alpha1.QueryPageResponse)
 
 ## <span id="animeshon.webpage.v1alpha1.Archive">Archive</span>
 
@@ -25,6 +27,10 @@
 | <span id="animeshon.webpage.v1alpha1.Archive.ListPages">ListPages</span> |
 | --- |
 | **rpc ListPages([ListPagesRequest](#animeshon.webpage.v1alpha1.ListPagesRequest)) [ListPagesResponse](#animeshon.webpage.v1alpha1.ListPagesResponse)**<br/><br/> |
+
+| <span id="animeshon.webpage.v1alpha1.Archive.QueryPage">QueryPage</span> |
+| --- |
+| **rpc QueryPage([QueryPageRequest](#animeshon.webpage.v1alpha1.QueryPageRequest)) [QueryPageResponse](#animeshon.webpage.v1alpha1.QueryPageResponse)**<br/><br/> |
 
 | <span id="animeshon.webpage.v1alpha1.Archive.CreatePage">CreatePage</span> |
 | --- |
@@ -139,3 +145,20 @@ The WebCache options to be used when importing a page from a public site.
 | --- | --- |
 | name | **[ string](#string)**<br/>The name of the page. |
 | content | **[ string](#string)**<br/>The page content according to the html selector. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryPageRequest">QueryPageRequest</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| name | **[ string](#string)**<br/>The name of the page to query. |
+| query | **[ string](#string)**<br/>The query to perform on the document in declarative query language. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryPageResponse">QueryPageResponse</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| result | **[ string](#string)**<br/>The document query result. |
