@@ -15,10 +15,20 @@
 - [Page](#animeshon.webpage.v1alpha1.Page)
 - [QueryPageRequest](#animeshon.webpage.v1alpha1.QueryPageRequest)
 - [QueryPageResponse](#animeshon.webpage.v1alpha1.QueryPageResponse)
+- [QueryPageResponse.QueryPageError](#animeshon.webpage.v1alpha1.QueryPageResponse.QueryPageError)
+- [QueryPageResponse.QueryPageResult](#animeshon.webpage.v1alpha1.QueryPageResponse.QueryPageResult)
+- [QueryRequest](#animeshon.webpage.v1alpha1.QueryRequest)
+- [QueryResponse](#animeshon.webpage.v1alpha1.QueryResponse)
+- [QueryResponse.QueryPageError](#animeshon.webpage.v1alpha1.QueryResponse.QueryPageError)
+- [QueryResponse.QueryPageResult](#animeshon.webpage.v1alpha1.QueryResponse.QueryPageResult)
 
 ## <span id="animeshon.webpage.v1alpha1.Archive">Archive</span>
 
 
+
+| <span id="animeshon.webpage.v1alpha1.Archive.Query">Query</span> |
+| --- |
+| **rpc Query([QueryRequest](#animeshon.webpage.v1alpha1.QueryRequest)) [QueryResponse](#animeshon.webpage.v1alpha1.QueryResponse)**<br/><br/> |
 
 | <span id="animeshon.webpage.v1alpha1.Archive.GetPage">GetPage</span> |
 | --- |
@@ -161,4 +171,58 @@ The WebCache options to be used when importing a page from a public site.
 
 | Field | Description |
 | --- | --- |
-| result | **[ string](#string)**<br/>The document query result. |
+| **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />result | **[ QueryPageResponse.QueryPageResult](#QueryPageResponse.QueryPageResult)**<br/>If the operation was successful this field will return the query result. |
+| **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />error | **[ QueryPageResponse.QueryPageError](#QueryPageResponse.QueryPageError)**<br/>If the operation ended up in a failure due to an error with the query evaluation this field will provide more details about the failure. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryPageResponse.QueryPageError">QueryPageResponse.QueryPageError</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| code | **[ int32](#int32)**<br/>The gRPC error code returned by the query. |
+| details | **[ string](#string)**<br/>Additional details of the evaluation error. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryPageResponse.QueryPageResult">QueryPageResponse.QueryPageResult</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| body | **[ google.protobuf.Any](#google.protobuf.Any)**<br/>The result of the query evaluation. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryRequest">QueryRequest</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| query | **[ string](#string)**<br/>The query to perform on the matching documents in FQL. |
+| pages | **[repeated string](#string)**<br/>The batch list of page resource names to be used for evaluation. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryResponse">QueryResponse</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| name | **[ string](#string)**<br/>The evaluated page resource name. |
+| **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />result | **[ QueryResponse.QueryPageResult](#QueryResponse.QueryPageResult)**<br/>If the operation was successful this field will return the query result. |
+| **[oneof](https://developers.google.com/protocol-buffers/docs/proto3#oneof)** _response_<br />error | **[ QueryResponse.QueryPageError](#QueryResponse.QueryPageError)**<br/>If the operation ended up in a failure due to an error with the query evaluation this field will provide more details about the failure. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryResponse.QueryPageError">QueryResponse.QueryPageError</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| code | **[ int32](#int32)**<br/>The gRPC error code returned by the query. |
+| details | **[ string](#string)**<br/>Additional details of the evaluation error. |
+
+## <span id="animeshon.webpage.v1alpha1.QueryResponse.QueryPageResult">QueryResponse.QueryPageResult</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| body | **[ google.protobuf.Any](#google.protobuf.Any)**<br/>The result of the query evaluation. |
