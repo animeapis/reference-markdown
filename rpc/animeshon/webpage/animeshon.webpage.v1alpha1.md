@@ -189,7 +189,7 @@ The WebCache options to be used when importing a page from a public site.
 
 | Field | Description |
 | --- | --- |
-| body | **[ google.protobuf.Any](#google.protobuf.Any)**<br/>The result of the query evaluation. |
+| value | **[ google.protobuf.Value](#google.protobuf.Value)**<br/>The result of the query evaluation. |
 
 ## <span id="animeshon.webpage.v1alpha1.QueryRequest">QueryRequest</span>
 
@@ -225,4 +225,4 @@ The WebCache options to be used when importing a page from a public site.
 
 | Field | Description |
 | --- | --- |
-| body | **[ google.protobuf.Any](#google.protobuf.Any)**<br/>The result of the query evaluation. |
+| value | **[ google.protobuf.Value](#google.protobuf.Value)**<br/>The result of the query evaluation. |
