@@ -4,6 +4,8 @@
 - [TrackerService](#animeshon.tracker.v1alpha1.TrackerService)
 - [Activity](#animeshon.tracker.v1alpha1.Activity)
 - [Audience](#animeshon.tracker.v1alpha1.Audience)
+- [ComputeTrackerRequest](#animeshon.tracker.v1alpha1.ComputeTrackerRequest)
+- [ComputeTrackerResponse](#animeshon.tracker.v1alpha1.ComputeTrackerResponse)
 - [CreateActivityRequest](#animeshon.tracker.v1alpha1.CreateActivityRequest)
 - [CreateTrackerRequest](#animeshon.tracker.v1alpha1.CreateTrackerRequest)
 - [DeleteActivityRequest](#animeshon.tracker.v1alpha1.DeleteActivityRequest)
@@ -16,6 +18,10 @@
 - [ListTrackersRequest](#animeshon.tracker.v1alpha1.ListTrackersRequest)
 - [ListTrackersResponse](#animeshon.tracker.v1alpha1.ListTrackersResponse)
 - [OperationMetadata](#animeshon.tracker.v1alpha1.OperationMetadata)
+- [ProgressIndicatorTree](#animeshon.tracker.v1alpha1.ProgressIndicatorTree)
+- [ProgressIndicatorTree.Node](#animeshon.tracker.v1alpha1.ProgressIndicatorTree.Node)
+- [ProgressIndicatorTree.Node.NodesEntry](#animeshon.tracker.v1alpha1.ProgressIndicatorTree.Node.NodesEntry)
+- [ProgressIndicatorTree.ProgressIndicator](#animeshon.tracker.v1alpha1.ProgressIndicatorTree.ProgressIndicator)
 - [Tracker](#animeshon.tracker.v1alpha1.Tracker)
 - [UpdateTrackerRequest](#animeshon.tracker.v1alpha1.UpdateTrackerRequest)
 
@@ -46,6 +52,10 @@ To fetch a tracker by the resource, use `ListTrackers` instead with an appropria
 | <span id="animeshon.tracker.v1alpha1.TrackerService.DeleteTracker">DeleteTracker</span> |
 | --- |
 | **rpc DeleteTracker([DeleteTrackerRequest](#animeshon.tracker.v1alpha1.DeleteTrackerRequest)) [.google.protobuf.Empty](#google.protobuf.Empty)**<br/><br/> |
+
+| <span id="animeshon.tracker.v1alpha1.TrackerService.ComputeTracker">ComputeTracker</span> |
+| --- |
+| **rpc ComputeTracker([ComputeTrackerRequest](#animeshon.tracker.v1alpha1.ComputeTrackerRequest)) [ComputeTrackerResponse](#animeshon.tracker.v1alpha1.ComputeTrackerResponse)**<br/><br/> |
 
 | <span id="animeshon.tracker.v1alpha1.TrackerService.ImportTrackers">ImportTrackers</span> |
 | --- |
@@ -114,6 +124,22 @@ TODO: who should be the owner of an audience? the user who created it?
 | name | **[ string](#string)**<br/>The id of the audience. |
 | members | **[repeated string](#string)**<br/>The members of this audience. |
 
+## <span id="animeshon.tracker.v1alpha1.ComputeTrackerRequest">ComputeTrackerRequest</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| name | **[ string](#string)**<br/> |
+
+## <span id="animeshon.tracker.v1alpha1.ComputeTrackerResponse">ComputeTrackerResponse</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| tree | **[ ProgressIndicatorTree](#ProgressIndicatorTree)**<br/> |
+
 ## <span id="animeshon.tracker.v1alpha1.CreateActivityRequest">CreateActivityRequest</span>
 
 
@@ -172,7 +198,7 @@ Selecting what provider we want to export to
 
 ## <span id="animeshon.tracker.v1alpha1.ImportTrackersRequest">ImportTrackersRequest</span>
 
-Selecting what provider we want to import from
+
 
 | Field | Description |
 | --- | --- |
@@ -220,6 +246,45 @@ Represents the metadata of the long-running operation.
 | requested_cancellation | **[ bool](#bool)**<br/>Output only. Identifies whether the user has requested cancellation of the operation. Operations that have successfully been cancelled have [Operation.error][] value with a [google.rpc.Status.code][google.rpc.Status.code] of 1, corresponding to `Code.CANCELLED`. |
 | api_version | **[ string](#string)**<br/>Output only. API version used to start the operation. |
 | progress_percentage | **[ int32](#int32)**<br/>Output only. |
+
+## <span id="animeshon.tracker.v1alpha1.ProgressIndicatorTree">ProgressIndicatorTree</span>
+
+A progress indicator tree is dynamically generated from all activities
+associated with a specific resource including all of its children resources.
+
+| Field | Description |
+| --- | --- |
+| root | **[ ProgressIndicatorTree.Node](#ProgressIndicatorTree.Node)**<br/> |
+
+## <span id="animeshon.tracker.v1alpha1.ProgressIndicatorTree.Node">ProgressIndicatorTree.Node</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| indicator | **[ ProgressIndicatorTree.ProgressIndicator](#ProgressIndicatorTree.ProgressIndicator)**<br/> |
+| nodes | **[map ProgressIndicatorTree.Node.NodesEntry](#ProgressIndicatorTree.Node.NodesEntry)**<br/> |
+
+## <span id="animeshon.tracker.v1alpha1.ProgressIndicatorTree.Node.NodesEntry">ProgressIndicatorTree.Node.NodesEntry</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| key | **[ string](#string)**<br/> |
+| value | **[ ProgressIndicatorTree.Node](#ProgressIndicatorTree.Node)**<br/> |
+
+## <span id="animeshon.tracker.v1alpha1.ProgressIndicatorTree.ProgressIndicator">ProgressIndicatorTree.ProgressIndicator</span>
+
+
+
+| Field | Description |
+| --- | --- |
+| MinValue | **[ int32](#int32)**<br/> |
+| MaxValue | **[ int32](#int32)**<br/> |
+| Value | **[ int32](#int32)**<br/> |
+| Ratio | **[ float](#float)**<br/> |
+| Threshold | **[ int32](#int32)**<br/> |
 
 ## <span id="animeshon.tracker.v1alpha1.Tracker">Tracker</span>
 
