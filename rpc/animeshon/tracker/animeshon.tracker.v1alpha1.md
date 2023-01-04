@@ -280,11 +280,11 @@ associated with a specific resource including all of its children resources.
 
 | Field | Description |
 | --- | --- |
-| MinValue | **[ int32](#int32)**<br/> |
-| MaxValue | **[ int32](#int32)**<br/> |
-| Value | **[ int32](#int32)**<br/> |
-| Ratio | **[ float](#float)**<br/> |
-| Threshold | **[ int32](#int32)**<br/> |
+| min_value | **[ int32](#int32)**<br/> |
+| max_value | **[ int32](#int32)**<br/> |
+| value | **[ int32](#int32)**<br/> |
+| ratio | **[ float](#float)**<br/> |
+| threshold | **[ int32](#int32)**<br/> |
 
 ## <span id="animeshon.tracker.v1alpha1.Tracker">Tracker</span>
 
